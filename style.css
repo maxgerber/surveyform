@@ -27,8 +27,11 @@ h1 {
 button {
     position: relative;
     top: 0;
-    font-size: 1.3em;
-    transition: background-color 2000ms linear, color 1000ms linear;
+    font-size: 1.2em;
+    border-radius: 4px;
+    transition: background-color 2000ms linear, color 500ms linear;
+    background-color: #A9D7D1;
+    padding: 0.4em 1em;
 }
 
 fieldset {
@@ -54,6 +57,11 @@ legend {
     width: 15%;
     right: 34%;
 }
+
+/*#personal input[name="gender"] {
+    position: absolute;
+    right: 30%
+}*/
 
 #politics {
     line-height: 2;
@@ -82,4 +90,6 @@ fieldset {
     opacity: 1;
     width: 90%;
     height: 30%;
+    margin-top: 2em;
+    font-size: 1em;
 }
