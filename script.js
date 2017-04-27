@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function() {
-    var party = document.getElementById("party");
+    var party = document.getElementById("partyvote");
 
     party.addEventListener("change", function() {
         switch(party.selectedIndex) {
