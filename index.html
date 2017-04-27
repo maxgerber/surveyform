@@ -20,10 +20,19 @@
         <h2>Tell us what you think.</h2>
 
         <form>
-            <fieldset name="politics">
-                <legend><strong>Where do your political allegiances lie?</strong></legend>
+            <fieldset name="personal" id="personal">
+                <legend><strong>Some personal details first of all</strong></legend>
+                <label for="name">Full Name: </label>
+                <input id="name" name="name" type="text" title="Your full name"><br><br>
+                <label for="email">Your email address: </label>
+                <input id="email" name="email" type="email" title="Your email address"><br><br>
+                <label for="birthdate">Your date of birth: </label>
+                <input id="birthdate" name="dob" type="date" title="Your date of birth"><br><br>
+            </fieldset>
 
-                <label for="partyvote">Which political party do you plan to vote for in the 2017 UK general election?</label>
+            <fieldset name="politics" id="politics">
+                <legend><strong>Where do your political allegiances lie?</strong></legend>
+                <label for="partyvote">Which political party do you plan to vote for in the 2017 UK general election?</label><br>
                 <select id="partyvote" title="Select the political party you are voting for in the 2017 general election" name="partyvote">
                     <option value="default">Choose a party</option>
                     <option value="labour">Labour</option>
@@ -31,11 +40,23 @@
                     <option value="libdem">Liberal Democrat</option>
                     <option value="green">Green</option>
                     <option value="other">Other</option>
-                </select>
+                </select><br><br><hr>
+
+                <label for="values"><strong>Which kind of policies matter most to you?</strong></label><br>
+                <input name="values" type="checkbox" value="Anti-discriminatory laws"> Anti-discriminatory laws</input><br>
+                <input name="values" type="checkbox" value="Economic growth"> Economic security</input><br>
+                <input name="values" type="checkbox" value="Equal opportunities"> Equal opportunities</input><br>
+                <input name="values" type="checkbox" value="Equal rights"> Equal rights</input><br>
+                <input name="values" type="checkbox" value="Renewable energy"> Renewable energy</input><br>
+                <input name="values" type="checkbox" value="Immigration"> Immigration</input><br>
+                <input name="values" type="checkbox" value="OtherCheck" id="othercheck"> Other (please specify below)</input><br><br>
+                <textarea name="values" value="OtherText" rows="6" cols="30" id="othertext" class="hidden">Are there any other policies which matter to you?</textarea>
             </fieldset>
+
+            <button id="button">Submit</button>
         </form>
 
-        <button>Submit</button>
+
     </main>
 </body>
 

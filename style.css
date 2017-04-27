@@ -26,14 +26,60 @@ h1 {
 
 button {
     position: relative;
-    top: 1em;
+    top: 0;
     font-size: 1.3em;
+    transition: background-color 2000ms linear, color 1000ms linear;
 }
 
 fieldset {
     padding: 1.5em;
+    margin-bottom: 3em;
 }
 
 legend {
     font-size: 1.1em;
+}
+
+#personal label {
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    width: 15%;
+    left: 34%;
+}
+
+#personal input {
+    display: inline-block;
+    position: absolute;
+    width: 15%;
+    right: 34%;
+}
+
+#politics {
+    line-height: 2;
+}
+
+hr {
+    position: relative;
+    bottom: 1em;
+    width: 40%;
+}
+
+main {
+    min-width: 633px;
+}
+
+fieldset {
+    min-width: 463px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+#othertext {
+    opacity: 1;
+    width: 90%;
+    height: 30%;
 }
